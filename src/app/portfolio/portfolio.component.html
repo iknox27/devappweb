@@ -1,3 +1,35 @@
-<p>
-  portfolio works!
-</p>
+<div class="ourPortfolio">
+
+    <header class="section-header">
+        <h3 class="section-title">Nuestro Portfolio</h3>
+    </header>
+
+
+    <div class="container">
+        <ul class="pagination" id="pagination">
+            <li id="li1" class="waves-effect active"><a (click)="setPagination(1,'all')">Todas</a></li>
+            <li id="li2" class="waves-effect"><a (click)="setPagination(2,'movil')">App Móviles</a></li>
+            <li id="li3" class="waves-effect"><a (click)="setPagination(3, 'desk')">App De Escritorio</a></li>
+            <li id="li4" class="waves-effect"><a (click)="setPagination(4, 'web')">Diseño Web</a></li>
+            <li id="li5" class="waves-effect"><a (click)="setPagination(5, 'publi')">Diseño Publicatario</a></li>
+        </ul>
+
+        <div class="row">
+            <div *ngFor="let item of itemsToShow" class="col s12 m6 l4">
+                <div class="card fadeIn">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/background3.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

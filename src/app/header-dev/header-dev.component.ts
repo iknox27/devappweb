@@ -14,7 +14,6 @@ export class HeaderDevComponent implements OnInit {
   }
 
   ngOnInit() {
-    $('.parallax').parallax();
   }
 
   openSideBar() {
