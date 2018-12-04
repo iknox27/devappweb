@@ -1,16 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterDevComponent } from './footer-dev/footer-dev.component';
+import { HeaderDevComponent } from './header-dev/header-dev.component';
+import { ParrallaxDirective } from './parrallax.directive';
+import { AngularFireModule } from '@angular/fire';
+
+const environment = {
+  production: true,
+  firebase: {
+    apiKey: 'AIzaSyAi4125aHeF96KMFiUNN4R33YIRo1jgdCw',
+    authDomain: 'devprocr-67df8.firebaseapp.com',
+    databaseURL: 'https://devprocr-67df8.firebaseio.com',
+    projectId: 'devprocr-67df8',
+    storageBucket: 'devprocr-67df8.appspot.com',
+    messagingSenderId: '956903617753'
+  }
+};
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterDevComponent,
+    HeaderDevComponent,
+    routingComponents,
+    ParrallaxDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

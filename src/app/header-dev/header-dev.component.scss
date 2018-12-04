@@ -1,0 +1,26 @@
+nav {
+    color: #fff;
+    background-color: black;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+#nav-mobile {
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 992px) {
+    .brand-logo {
+        padding-left: 16px;
+    }
+}
+
+.parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
