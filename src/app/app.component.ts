@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'devappweb';
+
+  onElementScroll($event) {
+      console.log($event);
+  }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    let number = window.pageYOffset || 0;
+    if (number > 200) {
+      console.log("hi")
+    } else if (number < 10) {
+      console.log("by")
+    }
+  }
+
 }
