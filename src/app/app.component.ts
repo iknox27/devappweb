@@ -7,19 +7,29 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'devappweb';
-
+  show = false;
+  hasCome = false;
   onElementScroll($event) {
       console.log($event);
   }
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
-    let number = window.pageYOffset || 0;
-    if (number > 200) {
-      console.log("hi")
-    } else if (number < 10) {
-      console.log("by")
+    const number = window.pageYOffset || 0;
+    const minVH = window.innerHeight;
+    if (number > minVH) {
+        this.show = true;
+    } else if (number < minVH) {
+      this.show = false;
     }
+  }
+
+  goUp() {
+    try {
+      window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+     } catch (e) {
+      window.scrollTo(0, 0);
+      }
   }
 
 }

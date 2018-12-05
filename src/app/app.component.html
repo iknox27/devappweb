@@ -1,4 +1,7 @@
-<div (scroll)="onElementScroll($event)"></div>
 <app-header-dev></app-header-dev>
 <router-outlet></router-outlet>
 <app-footer-dev></app-footer-dev>
+
+<button (click)="goUp()" class="button-contact scale-transition" [ngClass]="{'scale-out': !show}">
+    <i class="material-icons" style="color: white; font-size: 42px;">expand_less</i>
+</button>

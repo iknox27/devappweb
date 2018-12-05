@@ -1,0 +1,15 @@
+.button-contact {
+    position: fixed;
+    bottom: 16px;
+    height: 56px;
+    width: 56px;
+    right: 16px;
+    border-radius: 50%;
+    border: none;
+    z-index: 100000;
+    background-color: #009688 !important;
+}
+
+button:focus {
+    outline: 0;
+}

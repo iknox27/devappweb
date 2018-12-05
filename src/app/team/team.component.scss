@@ -1,0 +1,30 @@
+.grid-example {
+    position: relative;
+    display: inline;
+}
+
+.paith {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.slideUp {
+    top: -100%
+}
+
+.slideDown {
+    top: 100%;
+}
+
+.slideLeft {
+    left: -100%;
+}
+
+.slideRight {
+    left: 100%;
+}

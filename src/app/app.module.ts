@@ -7,6 +7,7 @@ import { FooterDevComponent } from './footer-dev/footer-dev.component';
 import { HeaderDevComponent } from './header-dev/header-dev.component';
 import { ParrallaxDirective } from './parrallax.directive';
 import { AngularFireModule } from '@angular/fire';
+import { DevDivMoveComponent } from './dev-div-move/dev-div-move.component';
 
 const environment = {
   production: true,
@@ -26,7 +27,8 @@ const environment = {
     FooterDevComponent,
     HeaderDevComponent,
     routingComponents,
-    ParrallaxDirective
+    ParrallaxDirective,
+    DevDivMoveComponent
   ],
   imports: [
     BrowserModule,
