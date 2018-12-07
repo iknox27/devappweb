@@ -4,7 +4,7 @@
 }
 
 .paith {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -13,18 +13,31 @@
     transition: all 0.5s ease-in-out;
 }
 
+.paith:first-child {
+    left: 100%;
+}
+
 .slideUp {
-    top: -100%
+    top: -100%;
+    animation: fadeOut;
 }
 
 .slideDown {
     top: 100%;
+    animation: fadeOut;
 }
 
 .slideLeft {
     left: -100%;
+    animation: fadeOut;
 }
 
 .slideRight {
     left: 100%;
+    animation: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {}
+    to {}
 }
