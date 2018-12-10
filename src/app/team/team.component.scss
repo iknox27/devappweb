@@ -4,40 +4,37 @@
 }
 
 .paith {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 100%;
     width: 100%;
     z-index: 1;
+}
+
+.up-transition{
+    margin-top: 10px;
+    display: block;
+    position: relative;
     transition: all 0.5s ease-in-out;
 }
 
-.paith:first-child {
-    left: 100%;
+.up-transition.down-out{
+    margin-top: 100%;
+    display: block;
+    position: relative;
+    transition: all 0.5s ease-in-out;
 }
 
-.slideUp {
-    top: -100%;
-    animation: fadeOut;
+
+.right-transition-dev{
+    margin-left: 0px;
+    display: block;
+    position: relative;
+    transition: all 0.7s ease-in-out; 
 }
 
-.slideDown {
-    top: 100%;
-    animation: fadeOut;
-}
-
-.slideLeft {
-    left: -100%;
-    animation: fadeOut;
-}
-
-.slideRight {
-    left: 100%;
-    animation: fadeOut;
-}
-
-@keyframes fadeOut {
-    from {}
-    to {}
+.right-transition.slide-out-dev{
+    margin-left: 100%;
+    display: block;
+    position: relative;
+    transition: all 0.7s ease-in-out;
 }

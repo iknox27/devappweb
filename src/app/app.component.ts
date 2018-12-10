@@ -8,7 +8,9 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'devappweb';
   show = false;
+  show2 = false;
   hasCome = false;
+  
   onElementScroll($event) {
       console.log($event);
   }
@@ -19,8 +21,11 @@ export class AppComponent {
     const minVH = window.innerHeight;
     if (number > minVH) {
         this.show = true;
-    } else if (number < minVH) {
+    } else if(number > ((minVH * 2) - (minVH/2))) {
+      this.show2= true;
+    }else if (number < minVH) {
       this.show = false;
+      this.show2= true;
     }
   }
 

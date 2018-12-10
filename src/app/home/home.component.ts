@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,11 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit()
+  {
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
   }
 
   
