@@ -1,7 +1,40 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .grid-example {
     position: relative;
     display: inline;
 }
+
+.dot-cont{
+    position: relative;
+  min-height: 150px;
+}
+
+.button-dowm{
+ position: absolute;
+  bottom: 10vh;
+  left: calc(50vw - 28px);
+  background-color: transparent !important;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  border: 1px white solid; 
+}
+
+.header-l{
+    margin-top: 1.68rem !important;
+}
+
+.lets{
+    background:url('../../assets/background3.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
 
 .paith {
     position: relative;
@@ -37,4 +70,11 @@
     display: block;
     position: relative;
     transition: all 0.7s ease-in-out;
+}
+
+.position-center{
+    text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+color: white;
 }

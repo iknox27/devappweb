@@ -3,13 +3,24 @@
 
     <div class="row" style="margin-bottom:0px">
 
-        <div class="grid-example col s12 m6 l12 cyan ex" style="height:100vh">
-            <div class="row">
-                       
+        <div class="grid-example lets dot-cont col s12 m6 l12 blue lighten-2" style="height:100vh">
+            <div class="container ">
+                <br><br><br><br><br><br><br><br><br>
+                <h1 class="header center header-l white-text text-lighten-2">Equipo de trabajo</h1>
+                <div class="row center">
+                    <h5 class="header col s12 white-text">Un grupo joven con gran conocimiento en el area de desarrollo y diseño</h5>
+                </div>
+                <br><br>
+
+                
+
             </div>
+            <button (click)="godown()" class="button-dowm scale-transition" [ngClass]="{'scale-out': show}">
+                <i class="material-icons" style="color: white; font-size: 42px;">expand_more</i>
+            </button>
         </div>
 
-        <div class="grid-example col s12 m6 l12" style="height:100vh">
+        <div class="grid-example col s12 m6 l12 teal darken-3" style="height:100vh">
                 <div class="row">
                     <div class="col s12 m6 scale-transition"  [ngClass]="{'scale-out': !show}">
                           <div class="card blue-grey darken-1">
@@ -23,22 +34,21 @@
                               <a href="#">This is a link</a>
                             </div>
                           </div>
+                </div>
+                  <div class="col s12 m6 scale-transition"  [ngClass]="{'scale-out': !show}">
+                    <div class="card blue-grey darken-1">
+                      <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
                     </div>
-                    <div class="col s12 m6 scale-transition"  [ngClass]="{'scale-out': !show}">
-                              <div class="card blue-grey darken-1">
-                                <div class="card-content white-text">
-                                  <span class="card-title">Card Title</span>
-                                  <p>I am a very simple card. I am good at containing small bits of information.
-                                  I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                  <a href="#">This is a link</a>
-                                  <a href="#">This is a link</a>
-                                </div>
-                              </div>
-                            </div>
-                    </div>
-
+                  </div>
+                </div>
         </div>
 
         <div class="grid-example col s12 m6 l12" style="height:100vh">
