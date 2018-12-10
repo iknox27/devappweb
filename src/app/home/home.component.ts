@@ -1,18 +1,16 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { OURKNOWLEDGE } from 'src/data/data';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+   knowle = [];
 
-  public ngOnInit()
-  {
-  }
-
-  
-
+  constructor() {
+    this.knowle = OURKNOWLEDGE.slice(0);
+   }
 }

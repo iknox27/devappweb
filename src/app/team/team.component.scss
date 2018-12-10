@@ -1,40 +1,41 @@
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .grid-example {
     position: relative;
     display: inline;
 }
 
-.dot-cont{
+.dot-cont {
     position: relative;
-  min-height: 150px;
+    min-height: 150px;
 }
 
-.button-dowm{
- position: absolute;
-  bottom: 10vh;
-  left: calc(50vw - 28px);
-  background-color: transparent !important;
-  border-radius: 50%;
-  height: 56px;
-  width: 56px;
-  border: 1px white solid; 
+.button-dowm {
+    position: absolute;
+    bottom: 10vh;
+    left: calc(50vw - 28px);
+    background-color: transparent !important;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    border: 1px white solid;
 }
 
-.header-l{
+.header-l {
     margin-top: 1.68rem !important;
 }
 
-.lets{
-    background:url('../../assets/background3.jpeg') no-repeat center center fixed;
+.lets {
+    background: url('../../assets/background3.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-} 
+}
 
 .paith {
     position: relative;
@@ -43,38 +44,81 @@
     z-index: 1;
 }
 
-.up-transition{
-    margin-top: 10px;
+.up-transition {
+    margin-top: 0px;
     display: block;
     position: relative;
     transition: all 0.5s ease-in-out;
 }
 
-.up-transition.down-out{
+.up-transition.down-out {
     margin-top: 100%;
     display: block;
     position: relative;
     transition: all 0.5s ease-in-out;
 }
 
-
-.right-transition-dev{
+.right-transition-dev {
     margin-left: 0px;
     display: block;
     position: relative;
-    transition: all 0.7s ease-in-out; 
+    transition: all 0.7s ease-in-out;
 }
 
-.right-transition.slide-out-dev{
+.right-transition.slide-out-dev {
     margin-left: 100%;
     display: block;
     position: relative;
     transition: all 0.7s ease-in-out;
 }
 
-.position-center{
+.position-center {
     text-align: center;
-vertical-align: middle;
-line-height: 90px; 
-color: white;
+    vertical-align: middle;
+    line-height: 90px;
+    color: white;
 }
+
+.container {
+    height: 100%;
+}
+
+.center {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 450px) {
+    .center {
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    .center {
+        top: 40%;
+    }
+}
+
+
+/*
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .card-image img {
+        height: 387px !important;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+    .card-image img {
+        height: 512px !important;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .card-image img {
+        height: 637px !important;
+    }
+}*/
