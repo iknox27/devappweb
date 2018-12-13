@@ -2,23 +2,7 @@
 
 
     <div class="row" style="margin-bottom:0px">
-
-        <div class="grid-example lets dot-cont col s12 m12 l12 blue lighten-2" style="height:100vh">
-            <div class="container ">
-                <h1 class="header center header-l white-text text-lighten-2">Equipo de trabajo</h1>
-                <div class="row center">
-                    <h5 class="header col s12 white-text">Un grupo joven con gran conocimiento en el area de desarrollo y diseño</h5>
-                </div>
-                <br><br>
-
-
-
-            </div>
-            <button (click)="godown()" class="button-dowm scale-transition" [ngClass]="{'scale-out': show}">
-                <i class="material-icons" style="color: white; font-size: 42px;">expand_more</i>
-            </button>
-        </div>
-
+        <app-presentation-header img="" title="Equipo de trabajo" text="Un grupo joven con gran conocimiento en el area de desarrollo y diseño"></app-presentation-header>
         <div class="grid-example col s12 m12 l12" style="height:auto">
             <div class="row">
                 <div class="col s12 m6 up-transition" [ngClass]="{'down-out': !show}">

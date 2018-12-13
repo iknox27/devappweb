@@ -1,0 +1,23 @@
+<div>
+    <app-presentation-header img="services" title="Nuestros Servicios" text=""></app-presentation-header>
+    <div class="containServices">
+        <div class="row" *ngFor="let item of items">
+            <div class="col s12 m4 l4">
+                <div class="card-panel teal datacol">
+                    <h6 class="white-text center-align"> {{item.name}} </h6>
+                    <span class="white-text center-align">{{item.descripcion}}</span>
+                </div>
+            </div>
+            <div class="col s12 m4 l8">
+                <div class="row">
+                    <div class="col s12 m4 l4 " *ngFor="let data of item.data">
+                        <div class="card-panel teal datacol right" [ngClass]="{'leftSide': show}">
+                            <h6 class="white-text center-align"> {{data.name}} </h6>
+                            <span class="white-text center-align">{{data.descripcion}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.containServices {
+    width: 100%;
+    height: auto;
+}
+
+.container-to-show,
+.datacol {
+    height: 25vh;
+}
+
+@media only screen and (max-width: 450px) {
+    .container-to-show,
+    .datacol {
+        height: auto;
+    }
+    .right {
+        height: 0px;
+        display: none;
+        transition: 1s all ease-in-out;
+    }
+    .leftSide {
+        display: block;
+        height: auto;
+    }
+}
+
+.right {
+    transform: scale(0)
+}
+
+.leftSide {
+    transform: scale(1)
+}

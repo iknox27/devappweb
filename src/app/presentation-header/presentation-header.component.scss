@@ -1,0 +1,46 @@
+.backim {
+    height: 100vh;
+    background: url('../../assets/background3.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .text-center {
+        position: relative;
+        float: left;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+}
+
+.img-services {
+    background: url('../../assets/b2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.button-dowm {
+    position: absolute;
+    bottom: 8vh;
+    left: calc(50vw - 28px);
+    background-color: transparent !important;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    border: 1px white solid;
+    i {
+        margin: 0 auto;
+    }
+}
+
+.center {
+    position: relative;
+    float: left;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -8,6 +8,8 @@ import { HeaderDevComponent } from './header-dev/header-dev.component';
 import { ParrallaxDirective } from './parrallax.directive';
 import { AngularFireModule } from '@angular/fire';
 import { DevDivMoveComponent } from './dev-div-move/dev-div-move.component';
+import { ServicesComponent } from './services/services.component';
+import { PresentationHeaderComponent } from './presentation-header/presentation-header.component';
 
 const environment = {
   production: true,
@@ -28,7 +30,9 @@ const environment = {
     HeaderDevComponent,
     routingComponents,
     ParrallaxDirective,
-    DevDivMoveComponent
+    DevDivMoveComponent,
+    ServicesComponent,
+    PresentationHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<div style="height:100vh" class="backim" [ngClass]="{'img-services': img == 'services'}">
+
+    <div class="row center">
+        <h2 class="header text-center">{{title}}</h2>
+        <span class="header col s12 white-text">{{text}}</span>
+    </div>
+
+    <button (click)="godown()" class="button-dowm scale-transition" [ngClass]="{'scale-out': show}">
+        <i class="material-icons" style="color: white; font-size: 42px;">expand_more</i>
+    </button>
+</div>

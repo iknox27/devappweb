@@ -4,6 +4,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   },
 
   {
+    path : 'services',
+    component: ServicesComponent
+  },
+
+  {
     path : 'contact',
     component: ContactComponent
   }
@@ -35,5 +41,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [PortfolioComponent, TeamComponent, ContactComponent, HomeComponent];
+export const routingComponents = [PortfolioComponent, TeamComponent, ContactComponent, HomeComponent, ServicesComponent];
 
