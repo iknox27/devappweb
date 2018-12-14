@@ -8,7 +8,7 @@
     .text-center {
         position: relative;
         float: left;
-        top: 35%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -17,6 +17,14 @@
 
 .img-services {
     background: url('../../assets/b2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio {
+    background: url('../../assets/b3.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,7 +48,7 @@
 .center {
     position: relative;
     float: left;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

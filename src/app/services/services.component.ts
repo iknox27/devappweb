@@ -11,6 +11,7 @@ export class ServicesComponent implements OnInit {
   items = [];
   show = false;
   constructor() {
+    window.scrollTo(0, 0);
     this.items = SERVICES.slice(0);
     setTimeout(() => { this.show = true; }, 2000);
   }

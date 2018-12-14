@@ -10,7 +10,9 @@ export class PortfolioComponent implements OnInit {
   items = ['web', 'movil', 'desk', 'publi', 'desk', 'publi', 'movil', 'web', 'web'];
   itemsToShow = [];
   lastItem = 1;
-  constructor() { }
+  constructor() {
+    window.scrollTo(0, 0);
+  }
 
   ngOnInit() {
     this.itemsToShow = this.items.slice(0);

@@ -1,0 +1,17 @@
+<div style="height: 50vh">
+
+    <div class="left-tick">
+        <i class="material-icons" style="color: black; font-size: 42px;">keyboard_arrow_left</i>
+    </div>
+
+    <div class="center-tick" id="center-tick">
+        <div class="value" id="value{{i}}" *ngFor="let item of items; let i=index ">
+            <img [src]="item">
+        </div>
+    </div>
+
+    <div class="right-tick ">
+        <i class="material-icons " style="color: black; font-size: 42px; ">keyboard_arrow_right</i>
+    </div>
+
+</div>

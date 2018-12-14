@@ -13,7 +13,9 @@ export class TeamComponent implements OnInit {
   show = false;
   show2 = false;
   show3 = false;
-  constructor() { }
+  constructor() {
+    window.scrollTo(0, 0);
+   }
 
   ngOnInit() {
     this.makeItChange();

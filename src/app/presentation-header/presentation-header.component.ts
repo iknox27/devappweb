@@ -21,7 +21,7 @@ export class PresentationHeaderComponent implements OnInit {
   godown() {
     const minVH: number = window.innerHeight;
     try {
-      window.scrollTo({ left: 0, top: minVH + 50, behavior: 'smooth' });
+      window.scrollTo({ left: 0, top: minVH - 56, behavior: 'smooth' });
      } catch (e) {
       window.scrollTo(0, 0);
       }
